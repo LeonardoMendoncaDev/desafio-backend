@@ -20,7 +20,7 @@
 			"id": "0cd68e9b-956b-3717-b7f8-f940afccf9ec",
 			"headers": "",
 			"headerData": [],
-			"url": "http://localhost:8080/planets/name/Planeta23",
+			"url": "http://localhost:8080/api/v1/planets/name/Alderaan",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -31,7 +31,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1581731219512,
+			"time": 1582764599290,
 			"name": "Get Planet by Name",
 			"description": "",
 			"collectionId": "373a2ab1-3f28-2a04-ae59-cbb29db22328",
@@ -39,9 +39,16 @@
 		},
 		{
 			"id": "58da6f37-e7d4-ab3a-4cd8-6a72e774787e",
-			"headers": "",
-			"headerData": [],
-			"url": "http://localhost:8080/planets",
+			"headers": "Authorization: Basic ZS1sc21lbmRvbmNhOiRNc0wyMTYk\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic ZS1sc21lbmRvbmNhOiRNc0wyMTYk",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/api/v1/planets",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -52,7 +59,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1581729840872,
+			"time": 1582764589103,
 			"name": "Get all Planets",
 			"description": "",
 			"collectionId": "373a2ab1-3f28-2a04-ae59-cbb29db22328",
@@ -69,7 +76,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:8080/planets",
+			"url": "http://localhost:8080/api/v1/planets/",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -81,12 +88,12 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1581731214357,
+			"time": 1582764585958,
 			"name": "Add Planet",
 			"description": "",
 			"collectionId": "373a2ab1-3f28-2a04-ae59-cbb29db22328",
 			"responses": [],
-			"rawModeData": "{\n\"name\": \"Planeta23\",\n\"climate\": \"Clima23\",\n\"terrain\": \"Terreno23\"\n}"
+			"rawModeData": "{\n\"name\": \"Coruscant\",\n\"climate\": \"Clima55\",\n\"terrain\": \"Terreno55\"\n}"
 		},
 		{
 			"id": "cfa6af78-b1aa-7e94-3da7-7667141d3257",
@@ -122,7 +129,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:8080/planets/",
+			"url": "http://localhost:8080/api/v1/planets/5e570b199b7bdc5f2883beb2",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -133,7 +140,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1581731233144,
+			"time": 1582764609128,
 			"name": "Remove Planet",
 			"description": "",
 			"collectionId": "373a2ab1-3f28-2a04-ae59-cbb29db22328",
@@ -144,24 +151,23 @@
 			"id": "ef1956c8-e44d-95cd-f16f-af64468c32c9",
 			"headers": "",
 			"headerData": [],
-			"url": "http://localhost:8080/planets/id",
+			"url": "http://localhost:8080/api/v1/planets/5e570ac09b7bdc5f2883beb1",
 			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "GET",
-			"collectionId": "373a2ab1-3f28-2a04-ae59-cbb29db22328",
 			"data": null,
 			"dataMode": "params",
-			"name": "Get Planet by Id",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1581731307572,
 			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"time": 1582764624322,
+			"name": "Get Planet by Id",
+			"description": "",
+			"collectionId": "373a2ab1-3f28-2a04-ae59-cbb29db22328",
+			"responses": []
 		}
 	]
 }
