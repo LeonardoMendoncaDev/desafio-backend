@@ -24,7 +24,7 @@ public class PlanetResourceTest {
     public void testGetAll() {
         given()
                 .when()
-                .get("/planets/")
+                .get("/api/v1/planets/")
                 .then()
                 .contentType(MediaType.APPLICATION_JSON)
                 .statusCode(200);
@@ -38,7 +38,7 @@ public class PlanetResourceTest {
         given()
                 .pathParam("name", name)
                 .when()
-                .get("/planets/name/{name}")
+                .get("/api/v1/planets/name/{name}")
                 .then()
                 .contentType(MediaType.APPLICATION_JSON)
                 .statusCode(200)
@@ -54,7 +54,7 @@ public class PlanetResourceTest {
         given()
                 .pathParam("paramId", paramId)
                 .when()
-                .get("/planets/{paramId}")
+                .get("/api/v1/planets/{paramId}")
                 .then()
                 .contentType(MediaType.APPLICATION_JSON)
                 .statusCode(200)
@@ -74,7 +74,7 @@ public class PlanetResourceTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .body(planet)
                 .when()
-                .post("/planets/")
+                .post("/api/v1/planets/")
                 .then()
                 .statusCode(201);
 
@@ -87,14 +87,14 @@ public class PlanetResourceTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .pathParam("id", "5e4748babd721c74f40c6059")
                 .when()
-                .delete("/planets/{id}")
+                .delete("/api/v1/planets/{id}")
                 .then()
                 .statusCode(200);
 
         given()
                 .pathParam("paramId", "5e4748babd721c74f40c6059")
                 .when()
-                .get("/planets/{paramId}")
+                .get("/api/v1/planets/{paramId}")
                 .then()
                 .contentType(MediaType.APPLICATION_JSON)
                 .statusCode(200)
