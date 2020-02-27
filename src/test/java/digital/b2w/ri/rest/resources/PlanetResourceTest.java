@@ -33,7 +33,7 @@ public class PlanetResourceTest {
     @Test
     public void testGetByName() {
         String name = "Alderaan";
-        String planet = "[{\"id\":\"5e55c87f262e7e4d11f1e007\",\"name\":\"Alderaan\",\"climate\":\"Clima43\",\"terrain\":\"Terreno43\",\"appears\":\"2\"}]";
+        String planet = "[{\"id\":\"5e570ac09b7bdc5f2883beb1\",\"name\":\"Alderaan\",\"climate\":\"Clima43\",\"terrain\":\"Terreno43\",\"appears\":\"2\"}]";
 
         given()
                 .pathParam("name", name)
@@ -48,8 +48,8 @@ public class PlanetResourceTest {
 
     @Test
     public void testGetById() {
-        String paramId = "5e55c87f262e7e4d11f1e007";
-        String planet = "[{\"id\":\"5e55c87f262e7e4d11f1e007\",\"name\":\"Alderaan\",\"climate\":\"Clima43\",\"terrain\":\"Terreno43\",\"appears\":\"2\"}]";
+        String paramId = "5e570ac09b7bdc5f2883beb1";
+        String planet = "[{\"id\":\"5e570ac09b7bdc5f2883beb1\",\"name\":\"Alderaan\",\"climate\":\"Clima43\",\"terrain\":\"Terreno43\",\"appears\":\"2\"}]";
 
         given()
                 .pathParam("paramId", paramId)
